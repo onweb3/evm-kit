@@ -1,13 +1,13 @@
 {
   "name": "evm-kit",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000e\u0000v\u0000m\u0000-\u0000k\u0000i\u0000t\u0000\r\u0000 \u0000",
+  "description": "A Web3 to Web2 EVM Tool Kit",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "lekhraj",
   "license": "ISC",
   "dependencies": {
     "ethers": "^5.4.0"
