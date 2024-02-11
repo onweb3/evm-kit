@@ -11,4 +11,4 @@ async function balanceETH(walletAddress , rpcUrl) {
     console.error('Error:', error);
   }
 }
-module.exports = balanceETH();
+module.exports = balanceETH;
