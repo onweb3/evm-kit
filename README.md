@@ -33,7 +33,7 @@ createWallet().then(evm => {
 
 
 //Import an EVM Based Wallet using Private Key
-const {importWallet}  = require("evm-web2-kit")
+const importWallet  = require("evm-web2-kit")
 
 const privateKey = 'YOUR_PRIVATE_KEY'
 importWallet(privateKey)
@@ -46,7 +46,7 @@ importWallet(privateKey)
 
 
   //Read a Contract Function
-const {readContract}  = require("evm-web2-kit")
+const readContract  = require("evm-web2-kit")
 
 const provider = "RPC_URL_OF_EVM";
 const contractAddress = "SMARTCONTRACT_ADDRESS"
@@ -62,6 +62,20 @@ readContract(provider, contractAddress, contractABI, privateKey, yourFunction)
     console.error("Error:", error);
 });
 
+
+//Get Safety of Smartcontract
+
+const checkSafetyV2 = require("evm-web2-kit");
+const rpcUrl = 'https://bsc-pokt.nodies.app';
+const contractAddress = '0x022d9995f0f3070341938de58509168ce5f1bc9c';
+const uniswapFactoryAddress = '0xcA143Ce32Fe78f1f7019d7d551a6402fC5350c73';
+const wethAddress = '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c';
+
+checkSafetyV2(rpcUrl,contractAddress , uniswapFactoryAddress, wethAddress).then(result =>{
+    console.log(result);
+}).catch(error =>{
+    console.log(error);
+})
 
 ```
 
