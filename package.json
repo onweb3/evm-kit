@@ -1,6 +1,6 @@
 {
   "name": "evm-web2-kit",
-  "version": "1.0.0",
+  "version": "1.0.6",
   "description": "A Web3 to Web2 EVM Tool Kit",
   "main": "index.js",
   "scripts": {
